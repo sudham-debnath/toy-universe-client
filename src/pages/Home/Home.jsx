@@ -2,14 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-
 const Home = () => {
   return (
     <div>
       <div className=" grid lg:grid-cols-2 sm:grid-cols-1 sm:flex-row-reverse bg-slate-100">
-
-
-      <div>
+        <div>
           <img
             className="pt-20 pl-8"
             src="https://i.ibb.co/ypdmrFn/sports-car.png"
@@ -17,17 +14,18 @@ const Home = () => {
         </div>
 
         <div className="p-16 text-center ">
-          <h1 className="text-5xl font-bold">Best Toys </h1>
-          <span className="text-5xl font-bold text-gray-500">in City</span>
+          <h1 className="text-5xl font-bold">Best Sports Toys </h1>
+          <span className="text-5xl font-bold text-gray-500">
+            Car in the City
+          </span>
           <p className="py-5 text-justify">
-            If you're looking for the best pizza in town, look no further than
-            our restaurant! Our pizzas are made with fresh, high-quality
-            ingredients and baked to perfection for a mouthwatering taste that
-            will leave you coming back for more.
+            Toy Cars offers a wide selection of thrilling and realistic vehicles
+            for young car enthusiasts. From sleek sports cars to rugged trucks
+            and classic sedans, our collection caters to every automotive
+            passion.
           </p>
           <button className="btn">Order Now!</button>
         </div>
-        
       </div>
 
       {/* Food Category List */}
@@ -36,42 +34,44 @@ const Home = () => {
         <div className=" text-center my-10">
           <h1 className=" text-3xl p-5 font-bold">Best Toys Category</h1>
           <p className=" text-justify">
-            Food can be divided into different categories based on various
-            factors such as ingredients, cooking methods, and cultural origins.
-            Some popular food categories include Italian cuisine, Asian cuisine,
-            vegan food, and comfort food. Each category offers a unique range of
-            flavors and options to suit every taste preference.
+            The Best Toys Category offers an exceptional range of playthings
+            carefully curated to provide children with the ultimate play
+            experiences. From educational toys to imaginative playsets, our
+            collection represents the pinnacle of quality, creativity, and
+            entertainment. Discover innovative STEM toys that foster curiosity
+            and critical thinking, alongside interactive games that promote
+            social interaction and family bonding.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-4 sm:grid-cols-1 gap-20">
-          <div className=" bg-slate-100 p-6 rounded  ">
-            <div className="bg bg-slate-200 p-3 rounded">
-              <img src="https://i.ibb.co/k4fFygs/plate.png" alt="" />
+        <div className="grid lg:grid-cols-4 sm:grid-cols-1 gap-20 text-center">
+          <div className=" bg-gray-100 p-6 rounded  ">
+            <div className="bg bg-gray-200 p-3 rounded">
+              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
             </div>
-            <h1 className=" text-xl text-bold py-4">Italian Cuisine</h1>
-            <p className="font-medium">167+ Recipes Available</p>
+            <h1 className=" text-xl text-bold py-4">Sports Car</h1>
+            <p className="font-medium">50+ Items Available</p>
           </div>
-          <div className=" bg-slate-100 p-6 rounded">
-            <div className="bg bg-slate-200 p-3 rounded">
-              <img src="https://i.ibb.co/k4fFygs/plate.png" alt="" />
+          <div className=" bg-gray-100 p-6 rounded">
+            <div className="bg bg-gray-200 p-3 rounded">
+              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
             </div>
-            <h1 className=" text-xl text-bold py-4">American Cuisine</h1>
-            <p className="font-medium">100+ Recipes Available</p>
+            <h1 className=" text-xl text-bold py-4">Regular Car</h1>
+            <p className="font-medium">50+ Items Available</p>
           </div>
-          <div className=" bg-slate-100 p-6 rounded">
-            <div className="bg bg-slate-200 p-3 rounded">
-              <img src="https://i.ibb.co/k4fFygs/plate.png" alt="" />
+          <div className=" bg-gray-100 p-6 rounded">
+            <div className="bg bg-gray-200 p-3 rounded">
+              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
             </div>
-            <h1 className=" text-xl text-bold py-4">Mexican Cuisine</h1>
-            <p className="font-medium">156+ Recipes Available</p>
+            <h1 className=" text-xl text-bold py-4">Mini Car</h1>
+            <p className="font-medium">50+ Items Available</p>
           </div>
-          <div className=" bg-slate-100 p-6 rounded">
-            <div className="bg bg-slate-200 p-3 rounded">
-              <img src="https://i.ibb.co/k4fFygs/plate.png" alt="" />
+          <div className=" bg-gray-100 p-6 rounded">
+            <div className="bg bg-gray-200 p-3 rounded">
+              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
             </div>
-            <h1 className=" text-xl text-bold py-4">Chinese Cuisine</h1>
-            <p className="font-medium">135+ Recipes Available</p>
+            <h1 className=" text-xl text-bold py-4">Mini Fire Truck</h1>
+            <p className="font-medium">50+ Items Available</p>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@ const Home = () => {
       {/* Our Best Chefs */}
       <div className="p-14">
         <div className=" text-center">
-          <h1 className="text-3xl p-5 font-bold">Our Best Italian Chefs</h1>
+          <h1 className="text-3xl p-5 font-bold">Gallery Section</h1>
           <p className=" text-justify">
             Our best chefs are highly skilled and experienced professionals who
             are passionate about creating delicious and innovative dishes. With
@@ -88,8 +88,6 @@ const Home = () => {
             experience for our customers.
           </p>
         </div>
-
-       
       </div>
 
       {/* About Us */}
@@ -97,24 +95,19 @@ const Home = () => {
       <div className=" text-center p-14 mt-0">
         <h1 className="text-3xl p-5 font-bold">About Us</h1>
         <p className=" text-justify">
-          Italian cuisine is known worldwide for its simple yet delicious
-          flavors and fresh ingredients. Italian restaurants typically offer a
-          wide range of dishes including pasta, pizza, antipasti, and seafood.
-          The cozy ambiance and warm hospitality of Italian restaurants make
-          them a popular choice for both casual and formal dining.Italian
-          cuisine is known for its simplicity, fresh ingredients, and bold
-          flavors. Italian food is heavily influenced by its regions, each with
-          its own unique specialties and traditional dishes. Some of the most
-          popular Italian dishes include pizza, pasta, risotto, antipasti, and
-          seafood. Italian cuisine relies heavily on fresh and locally sourced
-          ingredients, such as tomatoes, garlic, olive oil, and herbs like
-          basil, oregano, and rosemary. Many dishes are accompanied by a variety
-          of cheeses, including mozzarella, parmesan, and gorgonzola. Italian
-          cuisine also has a strong tradition of pairing food with wine, with
-          each dish often having a suggested wine pairing to complement its
-          flavors. Overall, Italian cuisine is loved worldwide for its delicious
-          and simple flavors, high-quality ingredients, and cozy and inviting
-          atmosphere.
+          Best Sports Toys is a premier destination for sports enthusiasts,
+          offering a handpicked selection of top-quality sporting equipment and
+          accessories. Our collection is designed to ignite a passion for sports
+          and inspire active play in children and adults alike. From basketball
+          hoops and soccer goals to tennis rackets and golf sets, our diverse
+          range of sports toys caters to various interests and skill levels. We
+          prioritize both fun and skill development, ensuring that our toys
+          foster physical activity, coordination, and a love for the game. With
+          a commitment to exceptional quality and durability, Best Sports Toys
+          guarantees that each product meets the highest standards for safety
+          and performance. Whether you're a seasoned athlete or just starting
+          out, explore our selection and discover the best sports toys to
+          elevate your game.
         </p>
       </div>
     </div>
