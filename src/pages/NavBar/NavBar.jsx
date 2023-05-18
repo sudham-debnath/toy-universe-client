@@ -64,10 +64,10 @@ const NavBar = () => {
                 <NavLink
                   to="/chefs"
                   className={({ isActive }) =>
-                    isActive ? " text-blue-600 font-bold " : ""
+                    isActive ? " text-gray-500 text-xl font-bold" : ""
                   }
                 >
-                  Chefs
+                  Toys
                 </NavLink>
               </li>
 

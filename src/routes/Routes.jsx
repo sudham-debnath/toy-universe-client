@@ -27,15 +27,15 @@ const router = createBrowserRouter([
         path: "register",
         element: <Register></Register>,
       },
+      //   {
+      //     path: "blogs",
+      //     element: <Blogs></Blogs>,
+      //   },
       {
         path: "blogs",
-        element: <Blogs></Blogs>,
-      },
-      {
-        path: "",
         element: (
           <PrivateRoute>
-           
+            <Blogs></Blogs>
           </PrivateRoute>
         ),
       },

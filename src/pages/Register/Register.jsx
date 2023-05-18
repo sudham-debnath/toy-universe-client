@@ -53,7 +53,7 @@ const Register = () => {
       <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0">
         <div>
           <a href="#">
-            <h3 className="text-4xl font-bold text-purple-600">
+            <h3 className="text-4xl font-bold text-gray-600">
               Please Register Here!
             </h3>
           </a>
@@ -77,7 +77,7 @@ const Register = () => {
                   type="text"
                   name="name"
                   required
-                  className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
             </div>
@@ -99,7 +99,7 @@ const Register = () => {
                   required
                   // onChange={handleEmailChange}
           
-                  className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
             </div>
@@ -118,7 +118,7 @@ const Register = () => {
                   name="password"
                   // onChange={handlePasswordChange}
                   required
-                  className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 mt-2 text-gray-600 bg-white border rounded-md focus:border-gray-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
             </div>
@@ -135,17 +135,17 @@ const Register = () => {
                   type="text"
                   name="photo_url"
                   placeholder="Enter Photo URL"
-                  className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
             </div>
-            <a href="#" className="text-xs text-purple-600 hover:underline">
+            <a href="#" className="text-xs text-gray-600 hover:underline">
               Forget Password?
             </a>
             <div className="flex items-center mt-4">
               <button
                 onClick={handleRegistration}
-                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
                 Register
               </button>
             </div>
@@ -155,7 +155,7 @@ const Register = () => {
             Already have an account?{" "}
             <span>
               <Link to="/login">
-              <a className="text-purple-600 hover:underline" href="#">Log in</a>
+              <a className="text-gray-600 hover:underline" href="#">Log in</a>
               </Link>
             </span>
           </div>
@@ -171,7 +171,7 @@ const Register = () => {
             <button
               aria-label="Login with Google"
               type="button"
-              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
+              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-gray-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@ const Register = () => {
             <button
               aria-label="Login with GitHub"
               role="button"
-              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
+              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-gray-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

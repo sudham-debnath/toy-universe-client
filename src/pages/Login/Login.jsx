@@ -86,7 +86,7 @@ const Login = () => {
     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
       <div className=" mt-10">
         <a href="#">
-          <h3 className="text-4xl text-center font-bold text-purple-600">
+          <h3 className="text-4xl text-center font-bold text-gray-600">
             Please Login!
           </h3>
         </a>
@@ -108,7 +108,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="Enter your email address"
-              className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-gray-500 bg-white border rounded-md focus:border-gray-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
           <div className="mb-2">
@@ -123,16 +123,16 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               type="password"
               placeholder="Enter Your Password"
-              className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
-          <a href="#" className="text-xs text-purple-600 hover:underline">
+          <a href="#" className="text-xs text-gray-600 hover:underline">
             Forget Password?
           </a>
           <div className="mt-6">
             <button
               onClick={handleLogin}
-              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
+              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
             >
               Login
             </button>
@@ -147,7 +147,7 @@ const Login = () => {
           <button
             onClick={handleGoogleSignIn}
             type="button"
-            className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-violet-600"
+            className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-gray-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ const Login = () => {
           {/* Github */}
           <button
             onClick={handleGitHubSignIn}
-            className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-violet-600">
+            className="flex items-center justify-center w-full p-2 border border-gray-500 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-gray-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
@@ -172,7 +172,7 @@ const Login = () => {
           </button>
 
           {/* Twitter */}
-          <button className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-violet-600">
+          <button className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-gray-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
@@ -186,7 +186,7 @@ const Login = () => {
         <p className="mt-8 text-xs font-light text-center text-gray-700">
           Don't have an account?
           <Link to="/register">
-            <a className="font-medium text-purple-600 hover:underline">
+            <a className="font-medium text-gray-600 hover:underline">
               Please Register!
             </a>
           </Link>
