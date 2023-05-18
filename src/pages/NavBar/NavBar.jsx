@@ -6,7 +6,7 @@ import { AuthContext } from "../../provider/AuthProvider";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
+//   console.log(user);
 
   const handleLogout = () => {
     logOut()
@@ -90,7 +90,7 @@ const NavBar = () => {
             {user?.email ? (
               <div className="flex items-center">
                 <button
-                  className="btn btn-primary border-none"
+                  className="btn border-none"
                   onClick={handleLogout}
                 >
                   Logout
