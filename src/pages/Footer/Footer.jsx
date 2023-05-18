@@ -15,17 +15,17 @@ const Footer = () => {
         </div>
         <div>
           <h1 className=" text-white text-2xl font-semibold">About Us</h1>
-          <p>About Food</p>
-          <p>About Chef</p>
+          <p>About Our Toy</p>
+          <p>About Toy Cars</p>
           <p>Latest Blogs</p>
-          <p>Best Selling Food</p>
+          <p>Best Selling Toys</p>
         </div>
         <div>
           <h1 className=" text-white text-2xl font-semibold">Cuisines</h1>
-          <p>Italian</p>
-          <p>American</p>
-          <p>Mexican</p>
-          <p>Chinese</p>
+          <p>Sports Car</p>
+          <p>Truck</p>
+          <p>Regular Car</p>
+          <p>Mini Fire Truck</p>
         </div>
         <div>
           <h1 className=" text-white text-2xl font-semibold">Support</h1>
