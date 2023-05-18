@@ -30,9 +30,9 @@ const Footer = () => {
         <div>
           <h1 className=" text-white text-2xl font-semibold">Support</h1>
           <p>Help Desk</p>
-          <p>Sales</p>
-          <p>Become a Partner</p>
-          <p>Developers</p>
+          <p>Our Sales</p>
+          <p>Become our Partner</p>
+          <p>Our Developers</p>
         </div>
         <div>
           <h1 className=" text-white text-2xl font-semibold">Address</h1>
