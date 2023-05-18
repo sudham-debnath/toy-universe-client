@@ -4,12 +4,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-gray-400 text-white pt-14 px-14 ">
-      <div className="grid justify-items-center lg:grid-cols-5 sm:grid-cols-1 gap-6 pb-5 bg-gray-400 text-white">
+    <div className=" bg-gray-600 text-white pt-14 px-14 ">
+      <div className="grid justify-items-center lg:grid-cols-5 sm:grid-cols-1 gap-6 pb-5 bg-gray-600 text-white">
         <div>
           <h1 className=" text-white text-2xl font-bold">Toy's Universe</h1>
           <p className="my-5">
-          If you're looking for the best pizza in town, look no further than our restaurant!
+          Toy's Universe is a haven for toy enthusiasts, offering a vast assortment of playthings that spark joy and ignite imagination in children of all ages.
           </p>
           <img src="https://i.ibb.co/hWrj59T/Group-9969.png" alt="" />
         </div>
@@ -21,7 +21,7 @@ const Footer = () => {
           <p>Best Selling Toys</p>
         </div>
         <div>
-          <h1 className=" text-white text-2xl font-semibold">Cuisines</h1>
+          <h1 className=" text-white text-2xl font-semibold">Category</h1>
           <p>Sports Car</p>
           <p>Truck</p>
           <p>Regular Car</p>
@@ -36,7 +36,9 @@ const Footer = () => {
         </div>
         <div>
           <h1 className=" text-white text-2xl font-semibold">Address</h1>
-          <p>524 Broadway , NYC</p>
+          <p>524, Broadway</p>
+          <p>12th NY Street</p>
+          <p>New York</p>
           <p>+1 777 - 978 - 5570</p>
         </div>
           </div>
