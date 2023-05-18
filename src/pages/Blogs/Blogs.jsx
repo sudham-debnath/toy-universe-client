@@ -5,7 +5,8 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div>
+      <div>
+          
       {/* <div className='static'>
       <h1 className='text-blue-600 font-bold text-center text-3xl bg-slate-100 p-20'>Blogs</h1>
         <div className='absolute top-0 right-0'>
@@ -25,7 +26,7 @@ const Blogs = () => {
       <article className="max-w-2xl px-6 py-24 mx-auto space-y-12  text-black">
         <div className="w-full mx-auto space-y-4 text-center">
           <p className="text-xs font-semibold tracking-wider uppercase">
-            #TailwindCSS
+            #HTML #CSS #TailwindCSS #Firebase #Database
           </p>
           <h1 className="text-4xl font-bold leading-tight md:text-5xl">
             Blog content start from here...
@@ -142,8 +143,8 @@ const Blogs = () => {
           <div className="flex justify-center pt-4 space-x-4 align-center">
             <a
               rel="noopener noreferrer"
-                          href="https://github.com/sudham-debnath"
-                          target="blank"
+              href="https://github.com/sudham-debnath"
+              target="blank"
               aria-label="GitHub"
               className="p-2 rounded-md dark:dark:text-gray-500 hover:dark:dark:text-violet-400"
             >
