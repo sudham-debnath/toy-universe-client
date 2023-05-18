@@ -1,13 +1,18 @@
+/* eslint-disable no-unused-vars */
+import "./App.css";
+import { Outlet } from "react-router-dom";
+import NavBar from "./pages/NavBar/NavBar";
+import Footer from "./pages/Footer/Footer";
+
 
 function App() {
- 
-
   return (
-    <h1 className="text-5xl font-bold underline text-center">
-      <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Purple to Blue</button>
-      Hello world!
-    </h1>
-  )
+    <div>
+      <NavBar></NavBar>
+      <Outlet></Outlet>
+      <Footer></Footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
