@@ -56,64 +56,94 @@ const Blogs = () => {
           <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
             <div className="flex flex-col">
               <h4 className="text-lg font-semibold">
-                When should you use context API?
+                1. What is an access token and refresh token? How do they work
+                and where should we store them on the client-side?
               </h4>
               <p className="dark:dark:text-gray-500 mb-5 text-justify">
-                You should use Context API in React when you need to share data
-                or state between multiple components that are not directly
-                related in the component hierarchy. It can simplify your code by
-                avoiding the need to pass props down through multiple levels of
-                components. However, it's important to use it judiciously and
-                consider Redux for more complex state management needs.
+                An access token is a credential used for authentication and
+                authorization when making requests to an API. It expires after a
+                certain period. A refresh token is a long-lived credential used
+                to obtain a new access token when the original one expires.
+                Access tokens should be stored securely on the client-side,
+                typically in browser memory, while refresh tokens should be
+                stored securely, preferably in an HTTP-only secure cookie. The
+                specific storage mechanisms may vary based on the application
+                and security requirements.
               </p>
-              <h4 className="text-lg font-semibold">What is a custom hook?</h4>
+              <h4 className="text-lg font-semibold">
+                2. Compare SQL and NoSQL databases?
+              </h4>
               <p className="dark:dark:text-gray-500 mb-5 text-justify">
-                A custom hook is a reusable function in React that encapsulates
-                logic and stateful behavior, making it easy to share and reuse
-                between different components. Custom hooks are created by
-                combining existing React hooks or other custom hooks, and can be
-                used to abstract away complex logic, manage state, or create
-                reusable functionality for components. They typically start with
-                the prefix "use" and follow the conventions of the React hook
-                API. Custom hooks can help make your code more modular,
-                maintainable, and reusable, and are a powerful tool in the React
-                developer's toolkit.
+                SQL and NoSQL are two different types of databases with distinct
+                characteristics: SQL (Structured Query Language) databases are
+                relational databases that organize data into tables with
+                predefined schemas. They use SQL for defining and manipulating
+                the data. SQL databases offer ACID (Atomicity, Consistency,
+                Isolation, Durability) compliance, which ensures data integrity.
+                They are suitable for complex queries and transactions, and
+                provide strong consistency. Examples of SQL databases include
+                MySQL, PostgreSQL, and Oracle. NoSQL (Not Only SQL) databases
+                are non-relational databases that provide flexible and
+                schema-less data storage. They are designed to handle large
+                amounts of unstructured or semi-structured data. NoSQL databases
+                offer horizontal scalability and high performance. They use
+                various data models such as key-value, document, columnar, and
+                graph. NoSQL databases prioritize scalability, availability, and
+                partition tolerance (CAP theorem). They are suitable for
+                scenarios with rapidly changing data requirements and high
+                traffic loads. Examples of NoSQL databases include MongoDB,
+                Cassandra, and Redis. In summary, SQL databases are suitable for
+                applications requiring strict data consistency, complex
+                querying, and structured data. NoSQL databases are preferable
+                for scenarios involving large amounts of unstructured or rapidly
+                changing data, where scalability and flexibility are prioritized
+                over strong consistency. The choice between SQL and NoSQL
+                databases depends on the specific needs and characteristics of
+                the application.
               </p>
-              <h4 className="text-lg font-semibold">What is useRef?</h4>
+              <h4 className="text-lg font-semibold">
+                3. What is express js? What is Nest JS?
+              </h4>
               <p className="dark:dark:text-gray-500 mb-5 text-justify">
-                useRef is a hook in React that provides a way to create a
-                mutable reference that persists across re-renders. It can be
-                used to access and manipulate DOM elements, store mutable
-                values, or manage other imperative logic. useRef returns a
-                mutable ref object that can be attached to a DOM element or any
-                other value, and updated without causing a re-render. This makes
-                it useful for accessing the previous value of a state or prop,
-                storing a reference to an element or component, or triggering an
-                imperative action. useRef is often used in combination with
-                other hooks like useEffect and useState to manage complex state
-                and behavior in React applications.
+                Express.js: Minimalist web application framework for Node.js.
+                Simple, flexible, and lightweight. Handles HTTP requests,
+                defines routes, and implements middleware. Extensible with a
+                large ecosystem of plugins and middleware. Popular choice for
+                server-side JavaScript/TypeScript applications. Nest.js:
+                Progressive Node.js framework. Built with TypeScript. Uses
+                Express.js as the underlying HTTP server. Incorporates OOP, FP,
+                and reactive programming. Modular and organized architecture.
+                Suitable for complex applications. Features dependency
+                injection, middleware, routing, etc. Used for enterprise-grade
+                applications and APIs with emphasis on maintainability and
+                scalability.
               </p>
-              <h4 className="text-lg font-semibold">What is useMemo?</h4>
+              <h4 className="text-lg font-semibold">
+                4. What is MongoDB aggregate and how does it work?
+              </h4>
               <p className="dark:dark:text-gray-500 mb-5 text-justify">
-                useMemo is a hook in React that allows you to memoize expensive
-                computations so that they only need to be re-calculated when
-                their dependencies change. It takes a function and an array of
-                dependencies, and returns a memoized value that is only
-                recalculated when the dependencies change. useMemo can help
-                optimize performance by avoiding unnecessary calculations,
-                especially when working with large data sets or computationally
-                expensive logic. It's important to note that useMemo should be
-                used with caution, as it can lead to code that is harder to
-                understand and maintain if overused. You should only use useMemo
-                when you have a clear understanding of the performance
-                implications of the calculations you are memoizing.
+                MongoDB's aggregate is a powerful framework used for data
+                aggregation and analysis within the database. It allows you to
+                perform complex queries, transformations, and computations on
+                your data. In short, MongoDB's aggregate works by combining
+                multiple stages to process and transform data in a pipeline.
+                Each stage performs a specific operation on the input documents
+                and passes the results to the next stage. The stages can include
+                operations like filtering, grouping, sorting, projecting, and
+                aggregating data. This enables you to perform advanced
+                calculations, create summaries, extract insights, and generate
+                customized reports from your data. The pipeline approach
+                provides flexibility and efficiency in processing large datasets
+                and complex operations within the database itself, reducing the
+                need for additional processing on the client side.
               </p>
             </div>
           </div>
           <div className="flex justify-center pt-4 space-x-4 align-center">
             <a
               rel="noopener noreferrer"
-              href="#"
+                          href="https://github.com/sudham-debnath"
+                          target="blank"
               aria-label="GitHub"
               className="p-2 rounded-md dark:dark:text-gray-500 hover:dark:dark:text-violet-400"
             >
