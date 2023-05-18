@@ -2,23 +2,23 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { AuthContext } from "../../provider/AuthProvider";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const NavBar = () => {
-//   const { user, logOut } = useContext(AuthContext);
-  // console.log(user);
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
 
-//   const handleLogout = () => {
-//     logOut()
-//       .then()
-//       .catch((err) => {
-//         console.log(err);
-//       });
-//   };
+  const handleLogout = () => {
+    logOut()
+      .then()
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div>
-      <div className="px-14 py-5 bg-slate-100">
+      <div className="px-14 py-5 bg-gray-100">
         <div className="navbar flex">
           <div className="navbar-start">
             <Link to="/" className="text-3xl font-bold">
@@ -31,7 +31,7 @@ const NavBar = () => {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    isActive ? " text-blue-600 font-bold " : ""
+                    isActive ? " text-gray-500 text-xl font-bold " : ""
                   }
                 >
                   Home
@@ -42,7 +42,7 @@ const NavBar = () => {
                 <NavLink
                   to="/login"
                   className={({ isActive }) =>
-                    isActive ? " text-blue-600 font-bold " : ""
+                    isActive ? " text-gray-500 text-xl font-bold " : ""
                   }
                 >
                   Login
@@ -53,7 +53,7 @@ const NavBar = () => {
                 <NavLink
                   to="/register"
                   className={({ isActive }) =>
-                    isActive ? " text-blue-600 font-bold " : ""
+                    isActive ? " text-gray-500 text-xl font-bold " : ""
                   }
                 >
                   Register
@@ -75,7 +75,7 @@ const NavBar = () => {
                 <NavLink
                   to="/blogs"
                   className={({ isActive }) =>
-                    isActive ? " text-blue-600 font-bold " : ""
+                    isActive ? " text-gray-500 text-xl font-bold " : ""
                   }
                 >
                   Blogs
@@ -87,7 +87,7 @@ const NavBar = () => {
           <div className="navbar-end">
 
             {/* Logged User Info */}
-            {/* {user?.email ? (
+            {user?.email ? (
               <div className="flex items-center">
                 <button
                   className="btn btn-primary border-none"
@@ -104,11 +104,11 @@ const NavBar = () => {
               </div>
             ) : (
               <Link to="/login">
-                <li className="btn btn-primary border-none">Login</li>
+                <li className="btn border-none">Login</li>
               </Link>
-            )} */}
+            )}
                       
-                      <li className="btn btn-primary border-none">Login</li>
+                      
 
           </div>
         </div>
