@@ -62,12 +62,34 @@ const NavBar = () => {
 
               <li>
                 <NavLink
-                  to="/chefs"
+                  to="/allToys"
                   className={({ isActive }) =>
                     isActive ? " text-gray-500 text-xl font-bold" : ""
                   }
                 >
-                  Toys
+                  All Toys
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/myToys"
+                  className={({ isActive }) =>
+                    isActive ? " text-gray-500 text-xl font-bold" : ""
+                  }
+                >
+                  My Toys
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/addToy"
+                  className={({ isActive }) =>
+                    isActive ? " text-gray-500 text-xl font-bold" : ""
+                  }
+                >
+                  Add a Toy
                 </NavLink>
               </li>
 

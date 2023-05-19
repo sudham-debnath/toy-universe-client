@@ -8,6 +8,9 @@ import Blogs from "./../pages/Blogs/Blogs";
 import ErrorPage from "./../pages/ErrorPage/ErrorPage";
 import App from "../App";
 import PrivateRoute from "./PrivateRoute";
+import AllToys from "../pages/AllToys/AllToys";
+import MyToys from "../pages/MyToys/MyToys";
+import AddToy from "../pages/AddToy/AddToy";
 
 const router = createBrowserRouter([
   {
@@ -27,15 +30,28 @@ const router = createBrowserRouter([
         path: "register",
         element: <Register></Register>,
       },
-      //   {
-      //     path: "blogs",
-      //     element: <Blogs></Blogs>,
-      //   },
+      {
+        path: "allToys",
+        element: <AllToys></AllToys>,
+      },
+      {
+        path: "myToys",
+        element: <MyToys></MyToys>,
+      },
+      {
+        path: "addToy",
+        element: <AddToy></AddToy>,
+      },
       {
         path: "blogs",
+        element: <Blogs></Blogs>,
+      },
+      {
+        path: "",
         element: (
           <PrivateRoute>
-            <Blogs></Blogs>
+            <AddToy></AddToy>
+            <MyToys></MyToys>
           </PrivateRoute>
         ),
       },

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import Gallery from "../Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -32,7 +33,7 @@ const Home = () => {
 
       <div className="p-14">
         <div className=" text-center my-10">
-          <h1 className=" text-3xl p-5 font-bold">Best Toys Category</h1>
+          <h1 className=" text-3xl p-5 font-bold">Shop by Category</h1>
           <p className=" text-justify">
             The Best Toys Category offers an exceptional range of playthings
             carefully curated to provide children with the ultimate play
@@ -87,6 +88,7 @@ const Home = () => {
             boundaries of culinary artistry and deliver a memorable dining
             experience for our customers.
           </p>
+          <Gallery></Gallery>
         </div>
       </div>
 
