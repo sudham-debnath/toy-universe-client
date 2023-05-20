@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const MyToys = ({ toy }) => {
+const MyToys = () => {
   const [allToys, setAllToys] = useState([]);
 
   useEffect(() => {
@@ -12,21 +12,20 @@ const MyToys = ({ toy }) => {
       .then((data) => setAllToys(data));
   }, []);
   console.log(allToys);
-    const {
-      _id,
-    name,
-    picture_url,
-    available_quantity,
-    description,
-    price,
-    rating,
-    seller_email,
-    seller_name,
-    sub_category,
-  } = allToys;
+
+  // const { _id, name, picture_url, available_quantity, description, price, rating, seller_email, seller_name, sub_category } = allToys;
+
+  //Delete data function
+  const handleDelete = (id) => {
+    fetch(`http://localhost:5000/toy/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
+
   return (
     <div>
-      <h1>My Toys</h1>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-7">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -42,6 +41,9 @@ const MyToys = ({ toy }) => {
                     checkbox
                   </label>
                 </div>
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Serial
               </th>
               <th scope="col" className="px-6 py-3">
                 Seller
@@ -67,7 +69,7 @@ const MyToys = ({ toy }) => {
             </tr>
           </thead>
           <tbody>
-            {allToys.map((toy) => (
+            {allToys.map((toy, i) => (
               <tr
                 key={toy._id}
                 className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
@@ -87,6 +89,7 @@ const MyToys = ({ toy }) => {
                     </label>
                   </div>
                 </td>
+                <td className="px-6 py-4">{i + 1}</td>
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -110,6 +113,7 @@ const MyToys = ({ toy }) => {
                     Update
                   </a>
                   <a
+                    onClick={() => handleDelete(toy._id)}
                     href="#"
                     className="font-medium text-red-600 dark:text-red-500 hover:underline"
                   >
