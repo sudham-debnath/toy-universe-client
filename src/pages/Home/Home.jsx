@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Gallery from "../Gallery/Gallery";
+import Tabsss from "../Tabs/Tabsss";
+
 
 const Home = () => {
   return (
@@ -43,45 +45,18 @@ const Home = () => {
             and critical thinking, alongside interactive games that promote
             social interaction and family bonding.
           </p>
+        
         </div>
 
-        <div className="grid lg:grid-cols-4 sm:grid-cols-1 gap-20 text-center">
-          <div className=" bg-gray-100 p-6 rounded  ">
-            <div className="bg bg-gray-200 p-3 rounded">
-              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
-            </div>
-            <h1 className=" text-xl text-bold py-4">Sports Car</h1>
-            <p className="font-medium">50+ Items Available</p>
-          </div>
-          <div className=" bg-gray-100 p-6 rounded">
-            <div className="bg bg-gray-200 p-3 rounded">
-              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
-            </div>
-            <h1 className=" text-xl text-bold py-4">Regular Car</h1>
-            <p className="font-medium">50+ Items Available</p>
-          </div>
-          <div className=" bg-gray-100 p-6 rounded">
-            <div className="bg bg-gray-200 p-3 rounded">
-              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
-            </div>
-            <h1 className=" text-xl text-bold py-4">Mini Car</h1>
-            <p className="font-medium">50+ Items Available</p>
-          </div>
-          <div className=" bg-gray-100 p-6 rounded">
-            <div className="bg bg-gray-200 p-3 rounded">
-              <img src="https://i.ibb.co/cb2m9hK/black-jaguar.png" alt="" />
-            </div>
-            <h1 className=" text-xl text-bold py-4">Mini Fire Truck</h1>
-            <p className="font-medium">50+ Items Available</p>
-          </div>
-        </div>
+        
+        <Tabsss></Tabsss>
       </div>
 
       {/* Our Best Chefs */}
       <div className="p-14">
         <div className=" text-center">
-          <h1 className="text-3xl p-5 font-bold">Gallery Section</h1>
-          <p className=" text-justify">
+          <h1 className="text-3xl pt-5 font-bold">Gallery Section</h1>
+          <p className=" text-justify p-8">
             Our best chefs are highly skilled and experienced professionals who
             are passionate about creating delicious and innovative dishes. With
             their expertise and creativity, they constantly strive to push the

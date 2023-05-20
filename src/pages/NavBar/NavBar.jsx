@@ -6,7 +6,7 @@ import { AuthContext } from "../../provider/AuthProvider";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
-//   console.log(user);
+  //   console.log(user);
 
   const handleLogout = () => {
     logOut()
@@ -62,12 +62,12 @@ const NavBar = () => {
 
               <li>
                 <NavLink
-                  to="/allToys"
+                  to="/addToy"
                   className={({ isActive }) =>
                     isActive ? " text-gray-500 text-xl font-bold" : ""
                   }
                 >
-                  All Toys
+                  Add a Toy
                 </NavLink>
               </li>
 
@@ -84,12 +84,12 @@ const NavBar = () => {
 
               <li>
                 <NavLink
-                  to="/addToy"
+                  to="/allToys"
                   className={({ isActive }) =>
                     isActive ? " text-gray-500 text-xl font-bold" : ""
                   }
                 >
-                  Add a Toy
+                  All Toys
                 </NavLink>
               </li>
 
@@ -107,14 +107,10 @@ const NavBar = () => {
           </div>
 
           <div className="navbar-end">
-
             {/* Logged User Info */}
             {user?.email ? (
               <div className="flex items-center">
-                <button
-                  className="btn border-none"
-                  onClick={handleLogout}
-                >
+                <button className="btn border-none" onClick={handleLogout}>
                   Logout
                 </button>
                 <img
@@ -129,9 +125,6 @@ const NavBar = () => {
                 <li className="btn border-none">Login</li>
               </Link>
             )}
-                      
-                      
-
           </div>
         </div>
       </div>
