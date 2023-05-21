@@ -101,17 +101,21 @@ const MyToys = () => {
                 <td className="px-6 py-4">${toy.price}</td>
                 <td className="px-6 py-4">{toy.available_quantity}</td>
                 <td className="px-6 py-4">
-                  <Link to={`details/${toy._id}`}>
+                  <Link to={`/details/${toy._id}`}>
                     <button className="btn">View details</button>
                   </Link>
                 </td>
                 <td className="flex justify-between items-center px-6 py-4 space-x-3">
+                  <Link to={`/edit/${toy?._id}`}>
                   <a
                     href="#"
                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                   >
                     Update
                   </a>
+                    
+                  </Link>
+                
                   <a
                     onClick={() => handleDelete(toy._id)}
                     href="#"
