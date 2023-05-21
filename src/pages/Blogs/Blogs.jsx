@@ -2,10 +2,13 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Blogs = () => {
   return (
-      <div>
+    <div>
+      
+      <PageTitle title="Toy's Universe | Blogs Page"/>
           
       {/* <div className='static'>
       <h1 className='text-blue-600 font-bold text-center text-3xl bg-slate-100 p-20'>Blogs</h1>

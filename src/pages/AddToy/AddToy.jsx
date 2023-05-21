@@ -1,6 +1,7 @@
 
 /* eslint-disable no-unused-vars */
 import React from "react";
+import PageTitle from "../PageTitle/PageTitle";
 
 const AddToy = () => {
   const handleSubmit = (event) => {
@@ -30,7 +31,7 @@ const AddToy = () => {
     };
     console.log(formData);
 
-    fetch("http://localhost:5000/upload-toy", {
+    fetch("https://toy-universe-server-sudham-debnath.vercel.app/upload-toy", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,6 +45,7 @@ const AddToy = () => {
   };
   return (
     <div>
+      <PageTitle title="Toy's Universe | Add a Toy"/>
       <div className="m-20 ">
         <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0">
           <div>

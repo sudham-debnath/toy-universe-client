@@ -3,11 +3,13 @@
 import React from "react";
 import Gallery from "../Gallery/Gallery";
 import Tabsss from "../Tabs/Tabsss";
-
+import PageTitle from "../PageTitle/PageTitle";
 
 const Home = () => {
   return (
     <div>
+      <PageTitle title="Toy's Universe | Home Page" />
+
       <div className=" grid lg:grid-cols-2 sm:grid-cols-1 sm:flex-row-reverse bg-slate-100">
         <div>
           <img
@@ -31,12 +33,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Food Category List */}
+      {/* Shop by Category */}
 
       <div className="p-14">
-        <div className=" text-center my-10">
-          <h1 className=" text-3xl p-5 font-bold">Shop by Category</h1>
-          <p className=" text-justify">
+        <div className="my-10">
+          <h1 className="text-3xl pb-5 font-bold">Shop by Category</h1>
+          <p className="text-justify">
             The Best Toys Category offers an exceptional range of playthings
             carefully curated to provide children with the ultimate play
             experiences. From educational toys to imaginative playsets, our
@@ -45,32 +47,74 @@ const Home = () => {
             and critical thinking, alongside interactive games that promote
             social interaction and family bonding.
           </p>
-        
         </div>
 
-        
         <Tabsss></Tabsss>
       </div>
 
-      {/* Our Best Chefs */}
+      {/* Car Gallery Section */}
       <div className="p-14">
-        <div className=" text-center">
-          <h1 className="text-3xl pt-5 font-bold">Gallery Section</h1>
-          <p className=" text-justify p-8">
-            Our best chefs are highly skilled and experienced professionals who
-            are passionate about creating delicious and innovative dishes. With
-            their expertise and creativity, they constantly strive to push the
-            boundaries of culinary artistry and deliver a memorable dining
-            experience for our customers.
-          </p>
+        <div className="">
+          <h1 className="text-3xl pb-7 font-bold">Car Gallery Section</h1>
           <Gallery></Gallery>
+        </div>
+      </div>
+
+      {/* Best Car Collection */}
+
+      <div className="p-14">
+        <div className="my-10">
+          <h1 className="text-3xl font-bold">Best Car Collection</h1>
+        </div>
+
+        <div className="grid lg:grid-cols-4 sm:grid-cols-1 gap-20">
+          <div className=" bg-slate-100 p-6 rounded  ">
+            <div className="p-3 rounded">
+              <img
+                src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+                alt=""
+              />
+            </div>
+            <h1 className=" text-xl text-bold py-4">Regular Car</h1>
+            <p className="font-medium">10+ car Available</p>
+          </div>
+          <div className=" bg-slate-100 p-6 rounded">
+            <div className="p-3 rounded">
+              <img
+                src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+                alt=""
+              />
+            </div>
+            <h1 className=" text-xl text-bold py-4">Sports Car</h1>
+            <p className="font-medium">10+ car Available</p>
+          </div>
+          <div className=" bg-slate-100 p-6 rounded">
+            <div className="p-3 rounded">
+              <img
+                src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+                alt=""
+              />
+            </div>
+            <h1 className=" text-xl text-bold py-4">Mini Fire Truck</h1>
+            <p className="font-medium">10+ car Available</p>
+          </div>
+          <div className=" bg-slate-100 p-6 rounded">
+            <div className="p-3 rounded">
+              <img
+                src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+                alt=""
+              />
+            </div>
+            <h1 className=" text-xl text-bold py-4">Mini Police Car</h1>
+            <p className="font-medium">10+ car Available</p>
+          </div>
         </div>
       </div>
 
       {/* About Us */}
 
-      <div className=" text-center p-14 mt-0">
-        <h1 className="text-3xl p-5 font-bold">About Us</h1>
+      <div className="p-14 mt-0">
+        <h1 className="text-3xl pb-5 font-bold">About Us</h1>
         <p className=" text-justify">
           Best Sports Toys is a premier destination for sports enthusiasts,
           offering a handpicked selection of top-quality sporting equipment and

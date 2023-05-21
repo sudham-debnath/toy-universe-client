@@ -40,14 +40,14 @@ const router = createBrowserRouter([
       //   path: "myToys",
       //   element: <MyToys></MyToys>,
       // },
-      {
-        path: "addToy",
-        element: <AddToy></AddToy>,
-      },
-      {
-        path: "details/:id",
-        element: <ToyDetails></ToyDetails>,
-      },
+      // {
+      //   path: "addToy",
+      //   element: <AddToy></AddToy>,
+      // },
+      // {
+      //   path: "details/:id",
+      //   element: <ToyDetails></ToyDetails>,
+      // },
       {
         path: "edit/:id",
         element: <EditToy></EditToy>,
@@ -61,6 +61,22 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MyToys></MyToys>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "details/:id",
+        element: (
+          <PrivateRoute>
+            <ToyDetails></ToyDetails>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "addToy",
+        element: (
+          <PrivateRoute>
+           <AddToy></AddToy>
           </PrivateRoute>
         ),
       },

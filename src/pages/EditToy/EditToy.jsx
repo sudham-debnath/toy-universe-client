@@ -33,7 +33,7 @@ const EditToy = () => {
         };
         console.log(formData);
     
-        fetch(`http://localhost:5000/toy/${id}`, {
+        fetch(`https://toy-universe-server-sudham-debnath.vercel.app/toy/${id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

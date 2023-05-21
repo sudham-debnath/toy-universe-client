@@ -2,20 +2,21 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import PageTitle from "../PageTitle/PageTitle";
 
 const AllToys = () => {
   const [allToys, setAllToys] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-toys")
+    fetch("https://toy-universe-server-sudham-debnath.vercel.app/all-toys")
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   }, []);
   console.log(allToys);
 
   const handleSearch = () => {
-    fetch(`http://localhost:5000/searchToyByName/${searchText}`)
+    fetch(`https://toy-universe-server-sudham-debnath.vercel.app/searchToyByName/${searchText}`)
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   };
@@ -23,6 +24,7 @@ const AllToys = () => {
 
   return (
     <div>
+      <PageTitle title="Toy's Universe | All Toys"/>
       {/* Search Tab */}
       <form className="flex items-center m-7">
         <label for="simple-search" class="sr-only">

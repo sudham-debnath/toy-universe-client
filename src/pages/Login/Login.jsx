@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Register from "./../Register/Register";
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../firebase/firebase.config";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Login = () => {
   
@@ -84,6 +85,7 @@ const Login = () => {
 
   return (
     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
+      <PageTitle title="Toy's Universe | Login Page"/>
       <div className=" mt-10">
         <a href="#">
           <h3 className="text-4xl text-center font-bold text-gray-600">

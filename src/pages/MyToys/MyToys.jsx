@@ -3,6 +3,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from './../../provider/AuthProvider';
+import PageTitle from "../PageTitle/PageTitle";
 
 const MyToys = () => {
   const { user } = useContext(AuthContext);
@@ -16,7 +17,7 @@ const MyToys = () => {
   // }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myToys/${user?.email}`)
+    fetch(`https://toy-universe-server-sudham-debnath.vercel.app/myToys/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   }, [user]);
@@ -38,6 +39,7 @@ const MyToys = () => {
 
   return (
     <div>
+      <PageTitle title="Toy's Universe | My Toys"/>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-7">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

@@ -3,6 +3,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link } from "react-router-dom";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Register = () => {
 
@@ -50,6 +51,7 @@ const Register = () => {
 
   return (
     <div className="m-20 ">
+      <PageTitle title="Toy's Universe | Register Page"/>
       <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0">
         <div>
           <a href="#">
