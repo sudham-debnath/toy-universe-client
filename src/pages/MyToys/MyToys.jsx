@@ -1,19 +1,31 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from './../../provider/AuthProvider';
 
 const MyToys = () => {
+  const { user } = useContext(AuthContext);
   const [allToys, setAllToys] = useState([]);
+  console.log(user.email);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/all-toys")
+  //     .then((res) => res.json())
+  //     .then((data) => setAllToys(data));
+  // }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-toys")
+    fetch(`http://localhost:5000/myToys/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setAllToys(data));
-  }, []);
+  }, [user]);
+
   console.log(allToys);
 
   // const { _id, name, picture_url, available_quantity, description, price, rating, seller_email, seller_name, sub_category } = allToys;
+
+
 
   //Delete data function
   const handleDelete = (id) => {
