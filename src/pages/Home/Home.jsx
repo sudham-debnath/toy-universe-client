@@ -1,11 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import Gallery from "../Gallery/Gallery";
 import Tabsss from "../Tabs/Tabsss";
 import PageTitle from "../PageTitle/PageTitle";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  },[])
   return (
     <div>
       <PageTitle title="Toy's Universe | Home Page" />
@@ -35,7 +41,7 @@ const Home = () => {
 
       {/* Shop by Category */}
 
-      <div className="p-14">
+      <div className="p-14" data-aos = "fade-right">
         <div className="my-10">
           <h1 className="text-3xl pb-5 font-bold">Shop by Category</h1>
           <p className="text-justify">
@@ -53,7 +59,7 @@ const Home = () => {
       </div>
 
       {/* Car Gallery Section */}
-      <div className="p-14">
+      <div className="p-14" data-aos = "fade-left">
         <div className="">
           <h1 className="text-3xl pb-7 font-bold">Car Gallery Section</h1>
           <Gallery></Gallery>
@@ -62,7 +68,7 @@ const Home = () => {
 
       {/* Best Car Collection */}
 
-      <div className="p-14">
+      <div className="p-14" data-aos="fade-up">
         <div className="my-10">
           <h1 className="text-3xl font-bold">Best Car Collection</h1>
         </div>
@@ -113,7 +119,7 @@ const Home = () => {
 
       {/* About Us */}
 
-      <div className="p-14 mt-0">
+      <div className="p-14 mt-0" data-aos="fade-down">
         <h1 className="text-3xl pb-5 font-bold">About Us</h1>
         <p className=" text-justify">
           Best Sports Toys is a premier destination for sports enthusiasts,
